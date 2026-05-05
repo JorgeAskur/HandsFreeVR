@@ -1,0 +1,217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7800542736855285663
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7800542736855285634}
+  - component: {fileID: 7800542736855285633}
+  - component: {fileID: 7800542736855285636}
+  - component: {fileID: 7800542736855285638}
+  - component: {fileID: -6786672690672629220}
+  - component: {fileID: 1021888398}
+  - component: {fileID: 1021888400}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7800542736855285634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7800542736855285663}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7800542736855285633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7800542736855285663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!114 &7800542736855285636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7800542736855285663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfb9c61f6f70d064a9aec79d357cb69b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnMenu: {fileID: 0}
+  mainMenu: {fileID: 0}
+  selectMenu: {fileID: 0}
+  colorMenu: {fileID: 0}
+  inspectMenu: {fileID: 0}
+  scaleMenu: {fileID: 0}
+  posingMenu: {fileID: 0}
+  questionsMenu: {fileID: 0}
+  devMenu: {fileID: 0}
+  menu: {fileID: 0}
+  tasksMenu: {fileID: 0}
+  collider: {fileID: 0}
+  masterManage: {fileID: 1021888398}
+  tcpClient: {fileID: 0}
+  taskManager: {fileID: 1021888400}
+  speaker: {fileID: 0}
+  changeTask: 0
+  spanish:
+    witConfiguration: {fileID: 11400000, guid: 2f44baed3f969ea44bf01c7eabb3e832, type: 2}
+    minKeepAliveVolume: 0
+    minKeepAliveTimeInSeconds: 45
+    minTranscriptionKeepAliveTimeInSeconds: 60
+    maxRecordingTime: 45
+    soundWakeThreshold: 0
+    sampleLengthInMs: 10
+    micBufferLengthInSeconds: 1
+    maxConcurrentRequests: 5
+    sendAudioToWit: 1
+    customTranscriptionProvider: {fileID: 0}
+    alwaysRecord: 0
+    preferredActivationOffset: -0.5
+    dictationConfiguration:
+      multiPhrase: 0
+      scenario: default
+      inputType: text_default
+  english:
+    witConfiguration: {fileID: 11400000, guid: fa40c6325711ab949af6ef1047964955, type: 2}
+    minKeepAliveVolume: 0
+    minKeepAliveTimeInSeconds: 45
+    minTranscriptionKeepAliveTimeInSeconds: 60
+    maxRecordingTime: 45
+    soundWakeThreshold: 0
+    sampleLengthInMs: 10
+    micBufferLengthInSeconds: 1
+    maxConcurrentRequests: 5
+    sendAudioToWit: 1
+    customTranscriptionProvider: {fileID: 0}
+    alwaysRecord: 0
+    preferredActivationOffset: -0.5
+    dictationConfiguration:
+      multiPhrase: 0
+      scenario: default
+      inputType: text_default
+  experimentOn: 1
+--- !u!114 &7800542736855285638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7800542736855285663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2518c50cb3fc6a6458d4b743c2f69c7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  _useInitialPressPositionForDrag: 1
+--- !u!114 &-6786672690672629220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7800542736855285663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f54904a8102d90e4eaa0778e7a2de85f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  taskManager: {fileID: 1021888400}
+  speaker: {fileID: 0}
+  selectedObjs: []
+  floating: 1
+--- !u!114 &1021888398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7800542736855285663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df790fc81a2d6044cbaf3d4c48e06aa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuManage: {fileID: 7800542736855285636}
+  assembly: {fileID: 7523028162119674511, guid: 5ae463c19bb4c4d459fdd50fa75d50ff, type: 3}
+  speaker: {fileID: 0}
+  red: {fileID: 2100000, guid: ff5054adb30de814fbae256b58157579, type: 2}
+  green: {fileID: 2100000, guid: 45734e868b4f0934ebc3677c6f231855, type: 2}
+  blue: {fileID: 2100000, guid: ab793250a9185a244926bbd6e135a786, type: 2}
+  yellow: {fileID: 2100000, guid: eeee4a4f7fb5db84184683978aafa42f, type: 2}
+  magenta: {fileID: 2100000, guid: 9cda78e4ac4d51044965a171fe7b2ce3, type: 2}
+  cyan: {fileID: 2100000, guid: 9d7294bbe4997274596f4398aab26850, type: 2}
+  black: {fileID: 2100000, guid: 98689ffe9624f5a43b22073ca5f1e558, type: 2}
+  white: {fileID: 2100000, guid: 68332902c7083374a8f32305e51d07fc, type: 2}
+  brown: {fileID: 2100000, guid: f130a0989cfa992418f51d012a343c41, type: 2}
+  cube: {fileID: 9153828649631160142, guid: 9861c25cf526838499763949f76f400d, type: 3}
+  pyramid: {fileID: 7746819591937226896, guid: aa26e56c2d5dc9649881ca71d37ed6d6, type: 3}
+  cylinder: {fileID: 8474545352022962967, guid: 9bf13a2206d13cb439f37ea44d6df579, type: 3}
+  hemisphere: {fileID: 966106801780516911, guid: fab1f40b22860a74ba1261aba34e0d1f, type: 3}
+  sphere: {fileID: 1912925695747091302, guid: 6e11a5d9ff7c4c547b7b7941a32ec5ba, type: 3}
+  tcpClient: {fileID: 0}
+  taskManage: {fileID: 1021888400}
+--- !u!114 &1021888400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7800542736855285663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e4e76fbcac7cec479d2809a17be721e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentTask: T0
+  variant: 0
+  groupManager: {fileID: -6786672690672629220}
+  masterManager: {fileID: 1021888398}
+  menuManage: {fileID: 7800542736855285636}
+  tcpClient: {fileID: 0}
+  speaker: {fileID: 0}
+  targetObjT1:
+  - {fileID: 1234504923048626196, guid: 2dfe73b418ade6b44b5e5ac99c012db5, type: 3}
+  - {fileID: 3784139908151107501, guid: 7b26724d94f171b4fa077cc6ae4bb43f, type: 3}
+  - {fileID: 4695570422423868149, guid: fe3160d8efaee5d4aae098d09bc51d83, type: 3}
+  - {fileID: 1095096385873584445, guid: befd974060ae253458b28a1d98676ffd, type: 3}
+  - {fileID: 5854750774166075040, guid: 0939800b261b11a408baded055b83900, type: 3}
+  - {fileID: 3064958800910233068, guid: bade6bf6c7b896346a35b6aa4caad32f, type: 3}
+  - {fileID: 5659881313050761276, guid: 59fc7a814b9dfbf4db286c1d3762b69b, type: 3}
+  - {fileID: 8328814509189414257, guid: f3c2a810cfa776b40b3dc9ef10bc4301, type: 3}
+  textMenu: {fileID: 0}
+  secondTask: {fileID: 6303285472760042529, guid: 24a2aa1139910f24f92dc06bdbec45fe, type: 3}
+  secondTaskStruct: {fileID: 6303285472760042529, guid: 24a2aa1139910f24f92dc06bdbec45fe, type: 3}
+  thirdTask: {fileID: 5906616233477881786, guid: 560b06a92f5eece48aeb063c0cd2d389, type: 3}
+  thirdTaskStruct: {fileID: 5906616233477881786, guid: 560b06a92f5eece48aeb063c0cd2d389, type: 3}
+  marker: {fileID: 300972662722282824, guid: f9699521a8e923b4098555f7a2f20c9a, type: 3}
+  shape: 
+  color: 
